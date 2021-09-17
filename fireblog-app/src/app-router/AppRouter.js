@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Profile = () => {
+const AppRouter = () => {
     return (
         <div>
-            Profile
+            
         </div>
     )
 }
 
-export default Profile
+export default AppRouter
