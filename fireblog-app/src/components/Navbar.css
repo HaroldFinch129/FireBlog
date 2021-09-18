@@ -1,0 +1,45 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.Navbar_Container{
+    background-color: rgb(35, 35, 153);
+    width:100vw;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+    
+    
+}
+h2{
+    color: white;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.navbar_menu{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 243, 73);
+    height:30px;
+    float: right;
+    
+    
+
+    
+
+
+}
+
+.button{
+    text-decoration: none;
+    margin: 10px;
+
+}
