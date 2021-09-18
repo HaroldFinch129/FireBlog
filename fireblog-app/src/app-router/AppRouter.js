@@ -5,6 +5,11 @@ import {BrowserRouter,Route, Switch} from 'react-router-dom'
 import Dashboard from '../pages/Dashboard'
 import Login from '../pages/Login'
 import Register from '../pages/Register'
+// import Details from '../pages/Details'
+// import NewBlog from '../pages/NewBlog'
+// import Profile from '../pages/Profile'
+// import Update from '../pages/UpdateBlog'
+// import About from '../pages/About'
 
 const AppRouter = () => {
     return (

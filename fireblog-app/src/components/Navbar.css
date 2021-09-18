@@ -30,16 +30,23 @@ h2{
     background-color: rgb(255, 243, 73);
     height:30px;
     float: right;
-    
-    
-
-    
+    display: none;
 
 
 }
 
-.button{
-    text-decoration: none;
-    margin: 10px;
+
 
 }
+
+.menu{
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    
+}
+
+.menu.active{
+    display: block;
+}
+
