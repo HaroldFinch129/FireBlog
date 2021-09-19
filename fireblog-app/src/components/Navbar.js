@@ -7,19 +7,20 @@ const Navbar = () => {
   const [showToggle, setShowToggle] = useState(false);
   return (
     <div className="Navbar_Container">
-        <img src="#" alt="logo"/>
+        <img src="https://eds-fireblog.herokuapp.com/static/media/cw.041cf5e8.jpeg" className="image" alt="logo"/>
       <Link to="/">
         <h2>BLOG</h2>
       </Link>
-      <div className="navbarmenu" onClick={()=>
+      <button className="navbarmenu" onClick={()=>
       {setShowToggle(!showToggle);}}>
-      <i className="fas fa-user-circle"></i>
-      </div>
+      <i className="fas fa-user-circle" id="menuıcon"></i>
+      </button>
       {showToggle &&(
       <div className="menu">
         <div className="page">
         <Link to="/Login" >Login</Link>
         </div>
+        
         <div className="page">
         <Link to="/Register" >Register</Link>
         </div>
