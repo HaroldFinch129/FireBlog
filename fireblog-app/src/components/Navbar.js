@@ -16,14 +16,14 @@ const Navbar = () => {
       <i className="fas fa-user-circle" id="menuıcon"></i>
       </button>
       {showToggle &&(
-      <div className="menu">
-        <div className="page">
-        <Link to="/Login" >Login</Link>
-        </div>
+        <div className="menu">
+        <button className="page">
+        <Link to="/Login" ><span className="spantext">LOGIN</span></Link>
+        </button>
         
-        <div className="page">
-        <Link to="/Register" >Register</Link>
-        </div>
+        <button className="page">
+        <Link to="/Register" ><span className="spantext">REGISTER</span></Link>
+        </button>
       </div>
       )}
         
