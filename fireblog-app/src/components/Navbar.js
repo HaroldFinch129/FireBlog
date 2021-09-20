@@ -18,6 +18,9 @@ const Navbar = () => {
       {showToggle &&(
         <div className="menu">
         <button className="page">
+        <Link to="/Profile" ><span className="spantext">PROFILE</span></Link>
+        </button>
+        <button className="page">
         <Link to="/Login" ><span className="spantext">LOGIN</span></Link>
         </button>
         
