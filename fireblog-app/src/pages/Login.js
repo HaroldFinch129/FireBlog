@@ -7,12 +7,12 @@ const Login = () => {
             
             <div>
                 <form action="" className="Login_form">
-                    <img src="#" alt="#" />
+                    <img src="#" alt="" />
 
                     <input type="text" />
                     <input type="text" />
-                    <button></button>
-                    <button></button>
+                    <button>login</button>
+                    <button>with google</button>
 
                 </form>
 

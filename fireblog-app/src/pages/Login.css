@@ -10,6 +10,8 @@
     background-color: burlywood;
     width: 100vw;
     height: 100vh;
+    justify-content: center;
+    border: solid black;
    
     
 }
@@ -20,7 +22,9 @@
 .Login_form{
     display: flex;
     flex-direction:column;
-    margin: 50px 180px;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 50px 50px;
     text-align: center;
     justify-content: center;
     width: 50%;
