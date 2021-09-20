@@ -20,12 +20,14 @@ const AppRouter = () => {
 
                 <Route exact path = '/' component ={Dashboard}>Dashboard</Route>
                 <Route exact path = '/Profile' component ={Profile}>Profile</Route>
-                <Route exact path = '/Login' component ={Login}>Login</Route>
+                <Route exact path = '/Login' component ={Login}></Route>
                 <Route exact path = '/Register' component ={Register}>Register</Route>
 
 
 
             </Switch>
+
+            
 
 
         </BrowserRouter>

@@ -1,9 +1,22 @@
 import React from 'react'
+import './Login.css';
 
 const Login = () => {
     return (
-        <div>
-            Login
+        <div className="Login_container">
+            
+            <div>
+                <form action="" className="Login_form">
+                    <img src="#" alt="#" />
+
+                    <input type="text" />
+                    <input type="text" />
+                    <button></button>
+                    <button></button>
+
+                </form>
+
+            </div>
         </div>
     )
 }
