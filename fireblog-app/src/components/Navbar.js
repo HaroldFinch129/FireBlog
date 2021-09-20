@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className="Navbar_Container">
         <img src="https://eds-fireblog.herokuapp.com/static/media/cw.041cf5e8.jpeg" className="image" alt="logo"/>
-      <Link to="/">
+      <Link to="/" className="navbar_header">
         <h2>BLOG</h2>
       </Link>
       <button className="navbarmenu" onClick={()=>
@@ -18,14 +18,14 @@ const Navbar = () => {
       {showToggle &&(
         <div className="menu">
         <button className="page">
-        <Link to="/Profile" ><span className="spantext">PROFILE</span></Link>
+        <Link to="/Profile" className="navbar_header">PROFILE</Link>
         </button>
         <button className="page">
-        <Link to="/Login" ><span className="spantext">LOGIN</span></Link>
+        <Link to="/Login" className="navbar_header">LOGIN</Link>
         </button>
         
         <button className="page">
-        <Link to="/Register" ><span className="spantext">REGISTER</span></Link>
+        <Link to="/Register" className="navbar_header">REGISTER</Link>
         </button>
       </div>
       )}

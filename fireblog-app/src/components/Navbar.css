@@ -50,6 +50,8 @@ h2{
 
 }
 
+
+
 .navbarmenu{
     width: 50px;
     height: 50px;
@@ -65,7 +67,9 @@ h2{
 }
 
 
-
+.navbar_header{
+    text-decoration: none;
+}
 
 
 

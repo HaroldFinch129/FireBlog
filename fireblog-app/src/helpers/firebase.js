@@ -35,7 +35,7 @@ export const createUser = (email, password) => {
     });
 };
 
-export const login = (email, password) => {
+export const logIn = (email, password) => {
   const auth = getAuth();
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
@@ -98,3 +98,4 @@ export const logOut = () => {
       // An error happened.
     });
 };
+ 
