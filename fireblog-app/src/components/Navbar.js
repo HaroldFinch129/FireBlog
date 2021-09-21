@@ -7,7 +7,9 @@ const Navbar = () => {
   const [showToggle, setShowToggle] = useState(false);
   return (
     <div className="Navbar_Container">
+      <button className="logo_button">
         <img src="https://eds-fireblog.herokuapp.com/static/media/cw.041cf5e8.jpeg" className="image" alt="logo"/>
+        </button>
       <Link to="/" className="navbar_header">
         <h2>BLOG</h2>
       </Link>

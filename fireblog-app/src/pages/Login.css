@@ -42,14 +42,24 @@
 .Login_form{
     display: flex;
     flex-direction:column;
-    background-color: rgb(223, 223, 223);
+    background-color: rgba(3, 43, 43, 0.815);
     border-radius: 5%;
+    padding: 10%;
     text-align: center;
     justify-content: center;
     width: 80%;
     height: 80%;
     margin: 10% 10%;
-    border: solid black;
+    
 
+}
+.form_image{
+    background-image: url(C:\Users\mhg\Desktop\FireBlog\fireblog-app\src\images\pngaaa.com-4084186.png);
+    background-repeat: no-repeat;
+    background-size:80%;
+    background-position:center;
+    width: 18vw;
+    height: 300px;
+    border: solid black;
 }
 

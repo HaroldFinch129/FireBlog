@@ -7,8 +7,7 @@ const Login = () => {
             
             <div className="form_container">
                 <form action="" className="Login_form">
-                    <img src="#" alt="" />
-
+                    <div className="form_image"></div>
                     <input type="text" />
                     <input type="text" />
                     <button>login</button>
