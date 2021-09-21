@@ -8,18 +8,23 @@ import Register from '../pages/Register'
 // import Details from '../pages/Details'
 // import NewBlog from '../pages/NewBlog'
 import Profile from '../pages/Profile'
+import { AuthContextProvider } from '../contexts/AuthContext'
+import PrivateRouter from "./PrivateRouter";
 // import Update from '../pages/UpdateBlog'
 // import About from '../pages/About'
 
 const AppRouter = () => {
     return (
+        <AuthContextProvider>
         <BrowserRouter>
             <Navbar/>
 
             <Switch>
 
+                <PrivateRouter exact path = '/Profile' component ={Profile}>Profile</PrivateRouter>
+                {/* <PrivateRouter exact path = '/Details' component ={Details}>Details</PrivateRouter>
+                <PrivateRouter exact path = '/NewBlog' component ={Newblog}>NewBlog</PrivateRouter> */}
                 <Route exact path = '/' component ={Dashboard}>Dashboard</Route>
-                <Route exact path = '/Profile' component ={Profile}>Profile</Route>
                 <Route exact path = '/Login' component ={Login}></Route>
                 <Route exact path = '/Register' component ={Register}>Register</Route>
 
@@ -31,6 +36,7 @@ const AppRouter = () => {
 
 
         </BrowserRouter>
+        </AuthContextProvider>
     )
 }
 

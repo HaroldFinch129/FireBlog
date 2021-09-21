@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { AuthContext} from "../contexts/AuthContext";
+import { logOut } from "../helpers/firebase";
 
 const Navbar = () => {
 
   const [showToggle, setShowToggle] = useState(false);
+  const {currentUser} = useContext(AuthContext);
   return (
     <div className="Navbar_Container">
       <button className="logo_button">
@@ -19,9 +22,8 @@ const Navbar = () => {
       </button>
       {showToggle &&(
         <div className="menu">
-        <button className="page">
-        <Link to="/Profile" className="navbar_header">PROFILE</Link>
-        </button>
+          {!currentUser ?
+          <>
         <button className="page">
         <Link to="/Login" className="navbar_header">LOGIN</Link>
         </button>
@@ -29,6 +31,14 @@ const Navbar = () => {
         <button className="page">
         <Link to="/Register" className="navbar_header">REGISTER</Link>
         </button>
+        </>
+        :
+        <>
+        <button className="page">
+        <Link to="/Profile" className="navbar_header">PROFILE</Link>
+        </button>
+        </>
+      }
       </div>
       )}
         
