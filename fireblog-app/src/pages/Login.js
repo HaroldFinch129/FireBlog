@@ -5,7 +5,7 @@ const Login = () => {
     return (
         <div className="Login_container">
             
-            <div>
+            <div className="form_container">
                 <form action="" className="Login_form">
                     <img src="#" alt="" />
 
