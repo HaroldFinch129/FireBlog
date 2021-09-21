@@ -1,65 +1,66 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
-
-.form_container{
-    box-shadow:3px 3px rgba(8, 6, 6, 0.7);
-    box-shadow: inset;
-    background-color: rgb(248, 248, 240,0.3);
-    border-radius: 5%;
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-  
-  
-    width: 30%;
-    height: 80%;
 }
 
-.Login_container{
-   
+.Login_container {
+
     background-image: url(https://picsum.photos/id/1018/2400/1600);
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    
-    
- 
-   
-    
+}
+
+.form_container {
+    box-shadow: 3px 3px rgba(8, 6, 6, 0.7);
+    box-shadow: inset;
+    background-color: rgb(248, 248, 240, 0.3);
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+
+    width: 30%;
+    height: 80%;
 }
 
 
-
-
-.Login_form{
+.Login_form {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     background-color: rgba(3, 43, 43, 0.815);
     border-radius: 5%;
     padding: 10%;
+    grid-gap: 10px;
     text-align: center;
     justify-content: center;
     width: 80%;
-    height: 80%;
+    height: 90%;
     margin: 10% 10%;
-    
 
 }
-.form_image{
+
+.form_image {
     background-image: url(C:\Users\mhg\Desktop\FireBlog\fireblog-app\src\images\pngaaa.com-4084186.png);
     background-repeat: no-repeat;
-    background-size:80%;
-    background-position:center;
+    background-size: 60%;
+    background-position: center;
     width: 18vw;
     height: 300px;
-    border: solid black;
+   
 }
 
+.form_header{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+.form_input{
+    border-radius: 5%;
+}
