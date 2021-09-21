@@ -11,8 +11,8 @@ const Login = () => {
                     <h1 className="form_header">LOGIN</h1>
                     <input type="text" className="form_input"/>
                     <input type="text" className="form_input"/>
-                    <button className="form_button">login</button>
-                    <button className="form_button">with google</button>
+                    <button className="form_button">LOGIN</button>
+                    <button className="form_button">with Google</button>
 
                 </form>
 

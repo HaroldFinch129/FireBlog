@@ -61,4 +61,13 @@
 }
 .form_input{
     border-radius: 5%;
+    
+
+}
+
+.form_button{
+    background-color:rgb(32, 167, 126);
+    font-weight: bold;
+    color: white;
+    
 }
