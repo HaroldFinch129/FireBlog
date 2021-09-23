@@ -50,8 +50,8 @@
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
-    width: 18vw;
-    height: 300px;
+    width: 100%;
+    height: 50%;
    
 }
 
@@ -61,6 +61,7 @@
 }
 .form_input{
     border-radius: 5%;
+    border: none;
     
 
 }
@@ -68,6 +69,12 @@
 .form_button{
     background-color:rgb(32, 167, 126);
     font-weight: bold;
-    color: white;
+    color:rgb(3, 43, 43);
+    border: none;
+}
+
+.google-logo{
+    width: 50px;
     
 }
+

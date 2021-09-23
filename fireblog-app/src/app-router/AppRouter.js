@@ -21,12 +21,12 @@ const AppRouter = () => {
 
             <Switch>
 
-                <PrivateRouter exact path = '/Profile' component ={Profile}>Profile</PrivateRouter>
+                <PrivateRouter exact path = '/Profile' component ={Profile}/>
                 {/* <PrivateRouter exact path = '/Details' component ={Details}>Details</PrivateRouter>
                 <PrivateRouter exact path = '/NewBlog' component ={Newblog}>NewBlog</PrivateRouter> */}
-                <Route exact path = '/' component ={Dashboard}>Dashboard</Route>
-                <Route exact path = '/Login' component ={Login}></Route>
-                <Route exact path = '/Register' component ={Register}>Register</Route>
+                <Route exact path = '/' component ={Dashboard}/>
+                <Route exact path = '/Login' component ={Login}/>
+                <Route exact path = '/Register' component ={Register}/>
 
 
 
