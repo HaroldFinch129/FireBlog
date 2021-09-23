@@ -12,7 +12,8 @@ export function AuthContextProvider(props) {
     useEffect(()=> {
         userObserver(setCurrentUser,setPending);
     }, []);
-
+    console.log(pending);
+    
     if(pending){
         console.log("pending");
         return <> Loading.. </>
@@ -20,9 +21,9 @@ export function AuthContextProvider(props) {
 
 
     return (
-        <AuthContextProvider value={{currentUser}}>
+        <AuthContext.Provider value={{currentUser}}>
             {props.children}
-        </AuthContextProvider>
+        </AuthContext.Provider>
     );
 }
 

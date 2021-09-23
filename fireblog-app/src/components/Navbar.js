@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { AuthContext} from "../contexts/AuthContext";
-import { logOut } from "../helpers/firebase";
+// import { logOut } from "../helpers/firebase";
 
 const Navbar = () => {
 
