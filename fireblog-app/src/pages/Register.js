@@ -31,13 +31,13 @@ const Register = () => {
   }
 
   return (
-    <div className="Login_container">
+    <div className="Register_container">
       <div className="form_container">
         <form action="" className="Login_form">
           <div className="form_image"></div>
           <h1 className="form_header">REGISTER</h1>
-          <input type="text" className="form_input" placeholder="Email" />
-          <input type="text" className="form_input" placeholder="Password" />
+          <input type="text" className="form_input" placeholder="Email" onChange={e => setEmail(e.target.value)}/>
+          <input type="text" className="form_input" placeholder="Password"onChange= {e => setPassword(e.target.value)}/>
           <button className="form_button" onClick={handleSubmit}>
             REGISTER{" "}
           </button>

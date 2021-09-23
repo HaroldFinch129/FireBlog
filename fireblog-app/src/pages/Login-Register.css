@@ -78,3 +78,15 @@
     
 }
 
+.Register_container {
+
+    background-image: url(https://picsum.photos/id/1040/2400/1600);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
