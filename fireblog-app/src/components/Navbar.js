@@ -2,7 +2,8 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { AuthContext} from "../contexts/AuthContext";
-// import { logOut } from "../helpers/firebase";
+import { logOut } from "../helpers/firebase";
+
 
 const Navbar = () => {
 
@@ -27,7 +28,7 @@ const Navbar = () => {
         <button className="page">
         <Link to="/Register" className="navbar_header">REGISTER</Link>
         </button>
-        
+
         <button className="page">
         <Link to="/Login" className="navbar_header">LOGIN</Link>
         </button>
@@ -38,6 +39,7 @@ const Navbar = () => {
         <button className="page">
         <Link to="/Profile" className="navbar_header">PROFILE</Link>
         </button>
+        <button className="page" onClick={() => logOut()}>LogOut</button>
         </>
       }
       </div>

@@ -24,9 +24,9 @@ const Login = () => {
 
   const { currentUser } = useContext(AuthContext);
 
-  if (currentUser) {
-    return <Redirect to="/" />;
-  }
+  // if (currentUser) {
+  //   return <Redirect to="/" />;
+  // }
 
   return (
     <div className="Login_container">
@@ -35,7 +35,7 @@ const Login = () => {
           <div className="form_image"></div>
           <h1 className="form_header">LOGIN</h1>
           <input type="text" className="form_input" placeholder="Email" onChange={e => setEmail(e.target.value)}/>
-          <input type="text" className="form_input" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
+          <input type="password" className="form_input" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
           <button className="form_button" value = "LOGIN" onClick={handleSubmit}>
             LOGIN{" "}
           </button>
