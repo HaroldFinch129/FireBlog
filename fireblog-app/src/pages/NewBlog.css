@@ -17,7 +17,7 @@
     justify-content: center;
 }
 
-.form_container {
+.NewLog_form_container {
     box-shadow: 3px 3px rgba(8, 6, 6, 0.7);
     box-shadow: inset;
     background-color: rgb(248, 248, 240, 0.3);
@@ -30,7 +30,7 @@
 }
 
 
-.Login_form {
+.NewLog_form {
     display: flex;
     flex-direction: column;
     background-color: rgba(3, 43, 43, 0.815);
@@ -40,24 +40,25 @@
     text-align: center;
     justify-content: center;
     width: 80%;
-    height: 80%;
+    height: 90%;
     margin: 10%;
  
 }
 
-.form_image {
+.NewLog_image {
     background-image: url(C:\Users\mhg\Desktop\FireBlog\fireblog-app\src\images\pngaaa.com-4084186.png);
     background-repeat: no-repeat;
     background-size: 60%;
     background-position: center;
     width: 100%;
-    height: 50%;
+    height: 40%;
    
 }
 
-.form_header{
+.NewBlog_form_header{
     color: white;
     font-family: 'Roboto Slab', serif;
+    font-size: 2em;
 }
 .form_input{
     border-radius: 5%;
@@ -102,4 +103,9 @@
     height: 100vh;
     display: flex;
     justify-content: center;
+}
+
+#content{
+    width: 18vw;
+    border-radius: 5%;
 }
