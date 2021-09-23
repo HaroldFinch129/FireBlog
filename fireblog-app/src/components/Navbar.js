@@ -39,7 +39,13 @@ const Navbar = () => {
         <button className="page">
         <Link to="/Profile" className="navbar_header">PROFILE</Link>
         </button>
-        <button className="page" onClick={() => logOut()}>LogOut</button>
+        <button className="page">
+        <Link to="/NewBlog" className="navbar_header">NEW BLOG</Link>
+        </button>
+        <button className="page">
+        <Link to="/Details" className="navbar_header">DETAILS</Link>
+        </button>
+        <button className="page" onClick={() => logOut()}>LOGOUT</button>
         </>
       }
       </div>
