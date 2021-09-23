@@ -34,9 +34,9 @@ const Login = () => {
         <form action="" className="Login_form">
           <div className="form_image"></div>
           <h1 className="form_header">LOGIN</h1>
-          <input type="text" className="form_input" placeholder="Email" />
-          <input type="text" className="form_input" placeholder="Password" />
-          <button className="form_button" onClick={handleSubmit}>
+          <input type="text" className="form_input" placeholder="Email" onChange={e => setEmail(e.target.value)}/>
+          <input type="text" className="form_input" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
+          <button className="form_button" value = "LOGIN" onClick={handleSubmit}>
             LOGIN{" "}
           </button>
           <button className="form_button" onClick={handleProviderRegister}>

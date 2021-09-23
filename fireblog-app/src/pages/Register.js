@@ -17,7 +17,8 @@ const Register = () => {
     const user = { email, password };
 
     createUser(user.email, user.password);
-    history.push("/");
+    console.log(email);
+    history.push("/Login");
   };
 
   const handleProviderRegister = () => {
@@ -27,7 +28,7 @@ const Register = () => {
   const { currentUser } = useContext(AuthContext);
 
   if (currentUser) {
-    return <Redirect to="/" />;
+    return <Redirect to="/Login" />;
   }
 
   return (
@@ -41,7 +42,7 @@ const Register = () => {
           <button className="form_button" onClick={handleSubmit}>
             REGISTER{" "}
           </button>
-          <button className="form_button" onClick={handleProviderRegister}>
+          <button className="form_button" value="REGISTER" onClick={handleProviderRegister}>
             Continue with{" "}
             <img
               className="google-logo"

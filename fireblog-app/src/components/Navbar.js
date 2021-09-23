@@ -25,12 +25,13 @@ const Navbar = () => {
           {!currentUser ?
           <>
         <button className="page">
-        <Link to="/Login" className="navbar_header">LOGIN</Link>
+        <Link to="/Register" className="navbar_header">REGISTER</Link>
         </button>
         
         <button className="page">
-        <Link to="/Register" className="navbar_header">REGISTER</Link>
+        <Link to="/Login" className="navbar_header">LOGIN</Link>
         </button>
+        
         </>
         :
         <>
