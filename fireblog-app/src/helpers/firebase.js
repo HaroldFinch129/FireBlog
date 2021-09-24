@@ -1,3 +1,4 @@
+import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
 import {
   getAuth,
@@ -9,15 +10,21 @@ import {
   signOut,
 } from "firebase/auth";
 
-
 const firebaseConfig = {
   apiKey: "AIzaSyB5U7wcCL9JfODpySRWeOmFJUbPKqYn7iI",
   authDomain: "fasebook-68c35.firebaseapp.com",
   projectId: "fasebook-68c35",
   storageBucket: "fasebook-68c35.appspot.com",
   messagingSenderId: "54940915076",
-  appId: "1:54940915076:web:c224a64be6c754f7abf9d1"
+  appId: "1:54940915076:web:c224a64be6c754f7abf9d1",
 };
+
+import { 
+  getFirestore,
+  collection, 
+  addDoc, 
+  getDocs, 
+} from "firebase/firestore";
 
 const app = initializeApp(firebaseConfig);
 
@@ -25,7 +32,6 @@ export const createUser = (email, password) => {
   const auth = getAuth();
   createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
-      
       const user = userCredential.user;
       console.log("kullanıcı kayıt oldu");
     })
@@ -33,8 +39,6 @@ export const createUser = (email, password) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log("kullanıcı kayıt hatası");
-
-      
     });
 };
 
@@ -81,17 +85,15 @@ export const userObserver = (setCurrentUser, setPending) => {
   const auth = getAuth();
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      
       const uid = user.uid;
       setCurrentUser(user);
-      setPending(false)
-    
+      setPending(false);
     } else {
-      setCurrentUser(null)
-      setPending(false)
-  };
-});
-}
+      setCurrentUser(null);
+      setPending(false);
+    }
+  });
+};
 
 export const logOut = () => {
   const auth = getAuth();
@@ -103,4 +105,27 @@ export const logOut = () => {
       // An error happened.
     });
 };
- 
+
+// firestore
+
+const db = getFirestore();
+export const addData = async (image, title, content) => {
+  try {
+    const docRef = await addDoc(collection(db, "blog"), {
+      image: image,
+      title: title,
+      content: content,
+    });
+    console.log("Document written with ID: ", docRef.id);
+  } catch (e) {
+    console.error("Error adding document: ", e);
+  }
+};
+
+export const readData = async (setData) => {
+  const querySnapshot = await getDocs(collection(db, "blog"));
+  // querySnapshot.forEach((doc) => {
+  //   console.log(`${doc.id} => ${doc.data()}`);
+  // });
+  setData(querySnapshot.docs);
+};
