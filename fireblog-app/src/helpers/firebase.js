@@ -19,12 +19,12 @@ const firebaseConfig = {
   appId: "1:54940915076:web:c224a64be6c754f7abf9d1",
 };
 
-import { 
-  getFirestore,
-  collection, 
-  addDoc, 
-  getDocs, 
-} from "firebase/firestore";
+// import { 
+//   getFirestore,
+//   collection, 
+//   addDoc, 
+//   getDocs, 
+// } from "firebase/firestore";
 
 const app = initializeApp(firebaseConfig);
 
@@ -108,24 +108,24 @@ export const logOut = () => {
 
 // firestore
 
-const db = getFirestore();
-export const addData = async (image, title, content) => {
-  try {
-    const docRef = await addDoc(collection(db, "blog"), {
-      image: image,
-      title: title,
-      content: content,
-    });
-    console.log("Document written with ID: ", docRef.id);
-  } catch (e) {
-    console.error("Error adding document: ", e);
-  }
-};
+// const db = getFirestore();
+// export const addData = async (image, title, content) => {
+//   try {
+//     const docRef = await addDoc(collection(db, "blog"), {
+//       image: image,
+//       title: title,
+//       content: content,
+//     });
+//     console.log("Document written with ID: ", docRef.id);
+//   } catch (e) {
+//     console.error("Error adding document: ", e);
+//   }
+// };
 
-export const readData = async (setData) => {
-  const querySnapshot = await getDocs(collection(db, "blog"));
-  // querySnapshot.forEach((doc) => {
-  //   console.log(`${doc.id} => ${doc.data()}`);
-  // });
-  setData(querySnapshot.docs);
-};
+// export const readData = async (setData) => {
+//   const querySnapshot = await getDocs(collection(db, "blog"));
+//   // querySnapshot.forEach((doc) => {
+//   //   console.log(`${doc.id} => ${doc.data()}`);
+//   // });
+//   setData(querySnapshot.docs);
+// };
